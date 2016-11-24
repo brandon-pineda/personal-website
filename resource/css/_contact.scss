@@ -1,0 +1,28 @@
+#contact-container {
+    @include outer-container(100%);
+    text-align: center;
+
+    h1 {
+        @include row(block, $default-layout-direction);
+        font-weight: 300;
+    }
+
+    .link-container {
+        @include row(block, $default-layout-direction);
+    }
+
+    a {
+        font-size: 1.2em;
+        color: black;
+        font-weight: 300;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: blue;
+    }
+
+    #icon {
+        font-size: 3em;
+    }
+}
